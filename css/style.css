@@ -8,6 +8,7 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --ocean: #404bbf;
+  --gray: #2e2f42;
 }
 
 /* --------css margin reset--- */
@@ -148,6 +149,18 @@ body {
   text-align: center;
   padding: 200px 0;
   background: var(--navy-blue-color);
+}
+
+.hero.bg-hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--gray);
 }
 
 .hero-title {
