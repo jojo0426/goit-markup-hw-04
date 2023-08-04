@@ -9,6 +9,7 @@
   --cornflower: #e7e9fc;
   --ocean: #404bbf;
   --gray: #2e2f42;
+  --light-slate: #8e8f99;
 }
 
 /* --------css margin reset--- */
@@ -237,6 +238,22 @@ body {
   line-height: 1.71;
 }
 
+.benifits-svg-box {
+  width: 264px;
+  height: 112px;
+  background-color: var(--cloud);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* this is the icon for section 1 */
+
+.title-icon {
+  margin: 24px 100px;
+}
 /* ---this is for sectioon 2 --- */
 
 .what-we-do.list {
@@ -309,7 +326,7 @@ body {
 .section-social-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .section-social-item {
@@ -329,10 +346,64 @@ body {
   color: var(--white);
 }
 
+.section-social-link:hover,
+.section-social-link:focus {
+  background-color: var(--ocean);
+}
+
 .section-social-icon {
   fill: currentColor;
 }
 
+/* "our team" shadow effect */
+.team .item {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* this is for our custoomer */
+.customer-title {
+  color: var(--navyblue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-list {
+  gap: 24px;
+  display: flex;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-slate);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--light-slate);
+  border-radius: 5px;
+}
+
+.customers-icon {
+  fill: currentColor;
+  width: 104px;
+  height: 56px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
 /* ---this is for footer--- */
 
 .bg-footer {
@@ -342,10 +413,6 @@ body {
 .page-footer {
   padding: 60px 0;
 }
-
-/* .logo-link.footer {
-  margin-bottom: 20px;
-} */
 
 .footer-description {
   margin-top: 16px;
@@ -357,6 +424,59 @@ body {
 
 .studio-footer {
   color: var(--cloud);
+}
+
+/* footer social icon */
+
+.footer-social-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link {
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--iris-color);
+  color: var(--white);
+}
+
+.page-footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-social-item .footer-social-link {
+  margin-left: -130px;
+}
+
+.footer-social-text {
+  color: var(--white);
+  display: flex;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--ocean);
+}
+.page-footer-container {
+  display: flex;
+  gap: 120px;
 }
 
 /* ---this is for portfolio--- */
@@ -417,6 +537,12 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .substrate {
