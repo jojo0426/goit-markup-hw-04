@@ -10,6 +10,7 @@
   --ocean: #404bbf;
   --gray: #2e2f42;
   --light-slate: #8e8f99;
+  --green: #31d0aa;
 }
 
 /* --------css margin reset--- */
@@ -361,7 +362,7 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-/* this is for our custoomer */
+/* this is for our customer */
 .partners {
   gap: 24px;
   display: flex;
@@ -455,7 +456,7 @@ body {
 
 .social-footer .link:hover,
 .social-footer .link:focus {
-  background-color: var(--ocean);
+  background-color: var(--green);
 }
 .footer {
   display: flex;
